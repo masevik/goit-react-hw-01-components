@@ -1,6 +1,8 @@
 import { Profile } from './Profile/Profile';
+import { Statistics } from './Statistics/Statistics';
 import { Box } from './Box';
 import user from '../data/user.json';
+import data from '../data/data.json';
 
 //   color: ${props => props.theme.colors.primary};
 
@@ -13,7 +15,8 @@ export const App = () => {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-      ></Profile>
+      />
+      <Statistics title="Upload stats" stats={data} />
     </Box>
   );
 };

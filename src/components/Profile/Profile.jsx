@@ -25,7 +25,7 @@ export const Profile = ({
       width="300px"
       height="400px"
       bg="background"
-      m="0px auto"
+      m="0px auto 10px"
       color="text"
       borderRadius="4px"
       boxShadow="0px 4px 4px rgba(0, 0, 0, 0.15)"
@@ -61,7 +61,9 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  followers: PropTypes.number.isRequired,
-  views: PropTypes.number.isRequired,
-  likes: PropTypes.number.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }),
 };
