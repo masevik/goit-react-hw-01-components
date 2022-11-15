@@ -41,7 +41,7 @@ export const Statistics = ({ title, stats }) => {
         {stats.map(item => (
           <Item style={changeColor()} key={item.id}>
             <Label>{item.label}</Label>
-            <Percentage>{item.percentage}</Percentage>
+            <Percentage>{item.percentage}%</Percentage>
           </Item>
         ))}
       </Box>

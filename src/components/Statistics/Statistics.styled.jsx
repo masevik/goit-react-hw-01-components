@@ -13,10 +13,10 @@ export const Item = styled.li`
   justify-content: center;
   width: calc(100% / 5);
   align-items: center;
-  border-top: 2px solid #e3e7ed93;
+  border-top: 1px solid #e3e7ed93;
 
   :not(:last-child) {
-    border-right: 2px solid #e3e7ed93;
+    border-right: 1px solid #e3e7ed93;
   }
 
   :first-child {
@@ -28,6 +28,7 @@ export const Item = styled.li`
   }
 `;
 export const Label = styled.span`
+  font-size: ${p => p.theme.fontSizes.xs};
   color: ${p => p.theme.colors.white};
   margin-bottom: ${p => p.theme.space[3]};
 `;
