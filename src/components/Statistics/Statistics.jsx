@@ -1,40 +1,35 @@
 import PropTypes from 'prop-types';
-import {} from './Statistics.styled';
+import { Title, Item, Label, Percentage } from './Statistics.styled';
 import { Box } from '../Box';
 
-export const Statistics = ({ title, stats: { id, label, percentage } }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <Box
       display="block"
       width="300px"
-      height="400px"
+      height="184px"
       bg="background"
       m="0px auto 10px"
       color="text"
       borderRadius="4px"
       boxShadow="0px 4px 4px rgba(0, 0, 0, 0.15)"
-      as="div"
+      as="section"
     >
-      <h2 className="title">Upload stats</h2>
-
-      <ul className="stat-list">
-        <li className="item">
-          <span className="label">.docx</span>
-          <span className="percentage">4%</span>
-        </li>
-        <li className="item">
-          <span className="label">.mp3</span>
-          <span className="percentage">14%</span>
-        </li>
-        <li className="item">
-          <span className="label">.pdf</span>
-          <span className="percentage">41%</span>
-        </li>
-        <li className="item">
-          <span className="label">.mp4</span>
-          <span className="percentage">12%</span>
-        </li>
-      </ul>
+      <Title>{title.toUpperCase()}</Title>
+      <Box
+        display="flex"
+        height="92px"
+        bg="secondaryBackground"
+        borderRadius="4px"
+        as="ul"
+      >
+        {stats.map(item => (
+          <Item key={item.id}>
+            <Label>{item.label}</Label>
+            <Percentage>{item.percentage}</Percentage>
+          </Item>
+        ))}
+      </Box>
     </Box>
   );
 };
