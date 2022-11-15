@@ -29,8 +29,10 @@ export const Item = styled.li`
 `;
 export const Label = styled.span`
   color: ${p => p.theme.colors.white};
+  margin-bottom: ${p => p.theme.space[3]};
 `;
 
 export const Percentage = styled.span`
+  font-size: ${p => p.theme.fontSizes.l};
   color: ${p => p.theme.colors.white};
 `;
