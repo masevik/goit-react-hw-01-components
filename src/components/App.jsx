@@ -9,8 +9,6 @@ import data from '../data/data.json';
 import friends from '../data/friends.json';
 import transactions from '../data/transactions.json';
 
-//   color: ${props => props.theme.colors.primary};
-
 export const App = () => {
   return (
     <Box width="700px" height="100%" bg="#e7ecf2" mx="auto" pt="10px">

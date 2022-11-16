@@ -6,6 +6,7 @@ export const theme = {
     secondText: '#b3bac3',
     background: '#fff',
     secondaryBackground: '#f3f6f9',
+    online: '#ffa500',
     primary: '#07c',
     secondary: '#05a',
     accent: '#609',
