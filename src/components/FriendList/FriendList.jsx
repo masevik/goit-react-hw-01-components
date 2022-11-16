@@ -7,7 +7,7 @@ export const FriendList = ({ friends }) => {
     <Box
       display="block"
       width="300px"
-      height="500px"
+      height="415px"
       m="0px auto 10px"
       color="text"
       borderRadius="4px"
