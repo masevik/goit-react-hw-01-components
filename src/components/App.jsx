@@ -13,7 +13,7 @@ import transactions from '../data/transactions.json';
 
 export const App = () => {
   return (
-    <Box width="700px" height="10000" bg="#e7ecf2" mx="auto" pt="10px">
+    <Box width="700px" height="100%" bg="#e7ecf2" mx="auto" pt="10px">
       <Profile
         username={user.username}
         tag={user.tag}

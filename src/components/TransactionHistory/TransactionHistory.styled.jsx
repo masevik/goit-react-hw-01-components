@@ -4,6 +4,7 @@ export const ColumnsTitle = styled.th`
   width: calc(100% / 3);
   height: 40px;
   background-color: #00bcd5;
+  text-transform: uppercase;
 `;
 
 export const ColumnsRow = styled.tr`
