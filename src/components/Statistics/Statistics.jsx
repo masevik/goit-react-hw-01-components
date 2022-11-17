@@ -36,7 +36,7 @@ export const Statistics = ({ title, stats }) => {
       boxShadow="0px 4px 4px rgba(0, 0, 0, 0.15)"
       as="section"
     >
-      <Title>{title.toUpperCase()}</Title>
+      {title && <Title>{title}</Title>}
       <Box display="flex" height="75px" as="ul">
         {stats.map(item => (
           <Item style={changeColor()} key={item.id}>

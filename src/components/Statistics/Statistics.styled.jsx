@@ -5,6 +5,7 @@ export const Title = styled.h2`
   margin-bottom: ${p => p.theme.space[5]};
   height: 60px;
   text-align: center;
+  text-transform: uppercase;
 `;
 
 export const Item = styled.li`
