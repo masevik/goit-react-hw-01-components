@@ -27,7 +27,7 @@ export const Profile = ({
       bg="background"
       m="0px auto 10px"
       color="text"
-      borderRadius="4px"
+      borderRadius="normal"
       boxShadow="0px 4px 4px rgba(0, 0, 0, 0.15)"
       as="div"
     >

@@ -10,7 +10,7 @@ export const FriendListItem = ({ id, avatar, name, isOnline }) => {
       justifyContent="left"
       height="75px"
       mb="10px"
-      pl="32px"
+      pl={5}
       bg="background"
       borderRadius="normal"
       boxShadow="standard"
